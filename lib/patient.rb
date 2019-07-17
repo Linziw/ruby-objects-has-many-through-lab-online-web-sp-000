@@ -21,4 +21,8 @@ def self.all
   @@all
 end
 
+def doctors
+  appointments.map {|appointment| appointment.doctor}
+end
+
 end
